@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>PassGen</title>
+		<script type="text/javascript" src="passgen.js"></script>
+		<style type="text/css">
+			#area{height: calc(100vh - 50px); margin: 10px 0 10px 10px;width: calc(100% - 50px);}	
+			#fixes{width:100%; height:100%}	
+			#fixes-wrap{width:100%; height:calc(25vh - 50px)}	
+			#prefixes-wrap{width:100%; height:calc(25vh - 50px)}	
+			#prefixes-wrap,#fixes-wrap,#prefixes-left,#prefixes-right{display:inline-block}
+			#prefixes-wrap textarea{width:100%; height:100%}
+			#prefixes-left,#prefixes-right{width: calc(50% - 5px);height: 100%;}
+			#prefixes-left{margin-right:6px}
+		</style>
+		
+	</head>
+	<body>
+		<div style="display:inline-block; width: 50%;">
+			<textarea name="" id="area" cols="30" rows="10"></textarea>      	
+		</div>
+
+		<div style="display:inline-block; width:45%; vertical-align:top">  
+			<div id="fixes-wrap">
+				<p>Fixes</p>
+				<textarea name="" id="fixes" cols="45 rows="40"></textarea>
+			</div>
+			<div id="prefixes-wrap">
+				<div id="prefixes-left">
+					<p>Left</p>
+					<textarea name="" id="leftside" ></textarea>
+				</div>
+				<div id="prefixes-right">
+					<p>Right</p>
+					<textarea name="" id="rightside" ></textarea>
+				</div>
+			</div>
+			<a id="go" href="#">Go!</a>  
+			<a id="calc" href="#">Calc!</a>  <br><span id="passcount"></span>
+		</div>
+		<div id="chkboxes">
+		
+		</div>
+	</body>
+</html>
+
